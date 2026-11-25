@@ -485,3 +485,144 @@ a {
     }
 
 }
+.auth-body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: radial-gradient(
+        ellipse at top,
+        #351052,
+        #101015 50%,
+        #08080c
+    );
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-logo {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.auth-logo span {
+    color: #a855f7;
+}
+
+.auth-card {
+    background: #15151e;
+    border: 1px solid #63318c;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 0 40px rgba(147, 51, 234, 0.15);
+}
+
+.auth-card h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.auth-card > p {
+    text-align: center;
+    color: #a1a1aa;
+    margin-bottom: 25px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #383040;
+    border-radius: 8px;
+    background: #0d0d14;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.auth-card input:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+}
+
+.auth-button {
+    padding: 15px;
+    background: linear-gradient(135deg, #9333ea, #6d28d9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.5);
+}
+
+.auth-card .auth-link {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #c084fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volver-inicio {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #a1a1aa;
+    text-decoration: none;
+}
+
+.volver-inicio:hover {
+    color: #c084fc;
+}
+
+#mensajeRegistro {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 25px;
+    }
+
+    .auth-logo {
+        font-size: 24px;
+    }
+}
