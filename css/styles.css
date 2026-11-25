@@ -626,3 +626,72 @@ a {
         font-size: 24px;
     }
 }
+#mensajeLogin {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+#botonesInvitado[hidden],
+#botonesUsuario[hidden] {
+    display: none !important;
+}
+
+#botonesUsuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nombre-usuario {
+    color: #c084fc;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn-logout {
+    background: linear-gradient(135deg, #9333ea, #6d28d9);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: #7e22ce;
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.5);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+
+    #botonesUsuario {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nombre-usuario {
+        font-size: 12px;
+        max-width: 140px;
+    }
+
+    .btn-logout {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+}

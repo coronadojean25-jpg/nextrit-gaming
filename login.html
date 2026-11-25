@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | NEXTRIT GAMING</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-body">
+
+    <main class="auth-container">
+
+        <a href="index.html" class="auth-logo">
+            NEXTRIT <span>GAMING</span>
+        </a>
+
+        <div class="auth-card">
+
+            <h1>Iniciar sesión</h1>
+            <p>Bienvenido de nuevo, gamer.</p>
+
+            <form id="formularioLogin">
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo"
+                    placeholder="Ingresa tu correo" required>
+
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena"
+                    placeholder="Ingresa tu contraseña" required>
+
+                <button type="submit" class="auth-button">
+                    Iniciar sesión
+                </button>
+
+                <p id="mensajeLogin"></p>
+
+            </form>
+
+            <p class="auth-link">
+                ¿No tienes una cuenta?
+                <a href="registro.html">Regístrate</a>
+            </p>
+
+        </div>
+
+        <a href="index.html" class="volver-inicio">
+            ← Volver a la tienda
+        </a>
+
+    </main>
+
+    <script type="module" src="js/auth.js"></script>
+
+</body>
+</html>
